@@ -23,7 +23,7 @@ jobs:
     - name: Test with Gradle
       run: ./gradlew test
     - name: Upload test report artifacts
-      uses: action/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: Reports
         path: ./app/build/reports/tests
