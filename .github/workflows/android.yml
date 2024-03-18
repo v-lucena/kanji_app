@@ -27,3 +27,8 @@ jobs:
       with:
         name: Reports
         path: ./app/build/reports/tests
+    - name: Download test report artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: Reports
+        path: ./tests/reports
