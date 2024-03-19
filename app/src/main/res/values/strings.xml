@@ -1,3 +1,206 @@
 <resources>
     <string name="app_name">Kanji App</string>
+
+    <string name="elongation_mark">\u30FC</string>
+
+    //----------------Hiragana----------------------
+    // a -- o
+    <string name="hiragana_a_small">\u3041</string>
+    <string name="hiragana_a_big">\u3042</string>
+    <string name="hiragana_i_small">\u3043</string>
+    <string name="hiragana_i_big">\u3044</string>
+    <string name="hiragana_u_small">\u3045</string>
+    <string name="hiragana_u_big">\u3046</string>
+    <string name="hiragana_e_small">\u3047</string>
+    <string name="hiragana_e_big">\u3048</string>
+    <string name="hiragana_o_small">\u3049</string>
+    <string name="hiragana_o_big">\u304A</string>
+    // ka (ga) -- ko (go)
+    <string name="hiragana_ka_big">\u304B</string>
+    <string name="hiragana_ga_big">\u304C</string>
+    <string name="hiragana_ki_big">\u304D</string>
+    <string name="hiragana_gi_big">\u304E</string>
+    <string name="hiragana_ku_big">\u304F</string>
+    <string name="hiragana_gu_big">\u3050</string>
+    <string name="hiragana_ke_big">\u3051</string>
+    <string name="hiragana_ge_big">\u3052</string>
+    <string name="hiragana_ko_big">\u3053</string>
+    <string name="hiragana_go_big">\u3054</string>
+    // sa (za) -- so (zo)
+    <string name="hiragana_sa_big">\u3055</string>
+    <string name="hiragana_za_big">\u3056</string>
+    <string name="hiragana_shi_big">\u3057</string>
+    <string name="hiragana_ji_big">\u3058</string>
+    <string name="hiragana_su_big">\u3059</string>
+    <string name="hiragana_zu_big">\u305A</string>
+    <string name="hiragana_se_big">\u305B</string>
+    <string name="hiragana_ze_big">\u305C</string>
+    <string name="hiragana_so_big">\u305D</string>
+    <string name="hiragana_zo_big">\u305E</string>
+    // ta (da) -- to (do)
+    <string name="hiragana_ta_big">\u305F</string>
+    <string name="hiragana_da_big">\u3060</string>
+    <string name="hiragana_chi_big">\u3061</string>
+    <string name="hiragana_di_big">\u3062</string>
+    <string name="hiragana_tsu_small">\u3063</string>
+    <string name="hiragana_tsu_big">\u3064</string>
+    <string name="hiragana_du_big">\u3065</string>
+    <string name="hiragana_te_big">\u3066</string>
+    <string name="hiragana_de_big">\u3067</string>
+    <string name="hiragana_to_big">\u3068</string>
+    <string name="hiragana_do_big">\u3069</string>
+    // na -- nu
+    <string name="hiragana_na_big">\u306A</string>
+    <string name="hiragana_ni_big">\u306B</string>
+    <string name="hiragana_nu_big">\u306C</string>
+    <string name="hiragana_ne_big">\u306D</string>
+    <string name="hiragana_no_big">\u306E</string>
+    // ha (ba, pa) -- ho (bo, po)
+    <string name="hiragana_ha_big">\u306F</string>
+    <string name="hiragana_ba_big">\u3070</string>
+    <string name="hiragana_pa_big">\u3071</string>
+    <string name="hiragana_hi_big">\u3072</string>
+    <string name="hiragana_bi_big">\u3073</string>
+    <string name="hiragana_pi_big">\u3074</string>
+    <string name="hiragana_hu_big">\u3075</string>
+    <string name="hiragana_bu_big">\u3076</string>
+    <string name="hiragana_pu_big">\u3077</string>
+    <string name="hiragana_he_big">\u3078</string>
+    <string name="hiragana_be_big">\u3079</string>
+    <string name="hiragana_pe_big">\u307A</string>
+    <string name="hiragana_ho_big">\u307B</string>
+    <string name="hiragana_bo_big">\u307C</string>
+    <string name="hiragana_po_big">\u307D</string>
+    // ma -- mo
+    <string name="hiragana_ma_big">\u307E</string>
+    <string name="hiragana_mi_big">\u307F</string>
+    <string name="hiragana_mu_big">\u3080</string>
+    <string name="hiragana_me_big">\u3081</string>
+    <string name="hiragana_mo_big">\u3082</string>
+    // ya, yu, yo
+    <string name="hiragana_ya_small">\u3083</string>
+    <string name="hiragana_ya_big">\u3084</string>
+    <string name="hiragana_yu_small">\u3085</string>
+    <string name="hiragana_yu_big">\u3086</string>
+    <string name="hiragana_yo_small">\u3087</string>
+    <string name="hiragana_yo_big">\u3088</string>
+    // ra -- ro
+    <string name="hiragana_ra_big">\u3089</string>
+    <string name="hiragana_ri_big">\u308A</string>
+    <string name="hiragana_ru_big">\u308B</string>
+    <string name="hiragana_re_big">\u308C</string>
+    <string name="hiragana_ro_big">\u308D</string>
+    // wa, wo, n
+    <string name="hiragana_wa_big">\u308F</string>
+    <string name="hiragana_wo_big">\u3092</string>
+    <string name="hiragana_n_big">\u3093</string>
+
+    //----------------Katakana----------------------
+    // a -- o
+    <string name="katakana_a_small">\u30A1</string>
+    <string name="katakana_a_big">\u30A2</string>
+    <string name="katakana_i_small">\u30A3</string>
+    <string name="katakana_i_big">\u30A4</string>
+    <string name="katakana_u_small">\u30A5</string>
+    <string name="katakana_u_big">\u30A6</string>
+    <string name="katakana_e_small">\u30A7</string>
+    <string name="katakana_e_big">\u30A8</string>
+    <string name="katakana_o_small">\u30A9</string>
+    <string name="katakana_o_big">\u30AA</string>
+    // ka (ga) -- ko (go)
+    <string name="katakana_ka_big">\u30AB</string>
+    <string name="katakana_ga_big">\u30AC</string>
+    <string name="katakana_ki_big">\u30AD</string>
+    <string name="katakana_gi_big">\u30AE</string>
+    <string name="katakana_ku_big">\u30AF</string>
+    <string name="katakana_gu_big">\u30B0</string>
+    <string name="katakana_ke_big">\u30B1</string>
+    <string name="katakana_ge_big">\u30B2</string>
+    <string name="katakana_ko_big">\u30B3</string>
+    <string name="katakana_go_big">\u30B4</string>
+    // sa (za) -- so (zo)
+    <string name="katakana_sa_big">\u30B5</string>
+    <string name="katakana_za_big">\u30B6</string>
+    <string name="katakana_shi_big">\u30B7</string>
+    <string name="katakana_ji_big">\u30B8</string>
+    <string name="katakana_su_big">\u30B9</string>
+    <string name="katakana_zu_big">\u30BA</string>
+    <string name="katakana_se_big">\u30BB</string>
+    <string name="katakana_ze_big">\u30BC</string>
+    <string name="katakana_so_big">\u30BD</string>
+    <string name="katakana_zo_big">\u30BE</string>
+    // ta (da) -- to (do)
+    <string name="katakana_ta_big">\u30BF</string>
+    <string name="katakana_da_big">\u30C0</string>
+    <string name="katakana_chi_big">\u30C1</string>
+    <string name="katakana_di_big">\u30C2</string>
+    <string name="katakana_tsu_small">\u30C3</string>
+    <string name="katakana_tsu_big">\u30C4</string>
+    <string name="katakana_du_big">\u30C5</string>
+    <string name="katakana_te_big">\u30C6</string>
+    <string name="katakana_de_big">\u30C7</string>
+    <string name="katakana_to_big">\u30C8</string>
+    <string name="katakana_do_big">\u30C9</string>
+    // na -- nu
+    <string name="katakana_na_big">\u30CA</string>
+    <string name="katakana_ni_big">\u30CB</string>
+    <string name="katakana_nu_big">\u30CC</string>
+    <string name="katakana_ne_big">\u30CD</string>
+    <string name="katakana_no_big">\u30CE</string>
+    // ha (ba, pa) -- ho (bo, po)
+    <string name="katakana_ha_big">\u30CF</string>
+    <string name="katakana_ba_big">\u30D0</string>
+    <string name="katakana_pa_big">\u30D1</string>
+    <string name="katakana_hi_big">\u30D2</string>
+    <string name="katakana_bi_big">\u30D3</string>
+    <string name="katakana_pi_big">\u30D4</string>
+    <string name="katakana_hu_big">\u30D5</string>
+    <string name="katakana_bu_big">\u30D6</string>
+    <string name="katakana_pu_big">\u30D7</string>
+    <string name="katakana_he_big">\u30D8</string>
+    <string name="katakana_be_big">\u30D9</string>
+    <string name="katakana_pe_big">\u30DA</string>
+    <string name="katakana_ho_big">\u30DB</string>
+    <string name="katakana_bo_big">\u30DC</string>
+    <string name="katakana_po_big">\u30DD</string>
+    // ma -- mo
+    <string name="katakana_ma_big">\u30DE</string>
+    <string name="katakana_mi_big">\u30DF</string>
+    <string name="katakana_mu_big">\u30E0</string>
+    <string name="katakana_me_big">\u30E1</string>
+    <string name="katakana_mo_big">\u30E2</string>
+    // ya, yu, yo
+    <string name="katakana_ya_small">\u30E3</string>
+    <string name="katakana_ya_big">\u30E4</string>
+    <string name="katakana_yu_small">\u30E5</string>
+    <string name="katakana_yu_big">\u30E6</string>
+    <string name="katakana_yo_small">\u30E7</string>
+    <string name="katakana_yo_big">\u30E8</string>
+    // ra -- ro
+    <string name="katakana_ra_big">\u30E9</string>
+    <string name="katakana_ri_big">\u30EA</string>
+    <string name="katakana_ru_big">\u30EB</string>
+    <string name="katakana_re_big">\u30EC</string>
+    <string name="katakana_ro_big">\u30ED</string>
+    // wa, wo, n
+    <string name="katakana_wa_big">\u30EF</string>
+    <string name="katakana_wo_big">\u30F2</string>
+    <string name="katakana_n_big">\u30F3</string>
+
+    //---------------Kanji-----------------------
+    //N5
+    <string name="kanji_day">\u2F47</string>
+    <string name="kanji_one">\u2F00</string>
+    <string name="kanji_two">\u4E8C</string>
+    <string name="kanji_three">\u4E09</string>
+    <string name="kanji_four">\u56DB</string>
+    <string name="kanji_five">\u4E94</string>
+    <string name="kanji_six">\u516D</string>
+    <string name="kanji_seven">\u4E03</string>
+    <string name="kanji_eight">\u516B</string>
+    <string name="kanji_nine">\u4E5D</string>
+    <string name="kanji_ten">\u5341</string>
+    <string name="kanji_hundred">\u767E</string>
+    <string name="kanji_thousand">\u5343</string>
+    <string name="kanji_ten_thousand">\u4E07</string>
 </resources>
