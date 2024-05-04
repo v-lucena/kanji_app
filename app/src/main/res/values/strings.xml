@@ -187,9 +187,23 @@
     <string name="katakana_wo_big">\u30F2</string>
     <string name="katakana_n_big">\u30F3</string>
 
-    //---------------Kanji-----------------------
-    //N5
+    //--------------Kanji-----------------------
+    //---------------N5--------------------------
     <string name="kanji_day">\u2F47</string>
+    <string name="kanji_country">\u56FD </string>
+    <string name="kanji_person">\u4EBA</string>
+    <string name="kanji_year">\u5E74</string>
+    <string name="kanji_big">\u5927</string>
+    <string name="kanji_book">\u672C</string>
+    <string name="kanji_inside">\u4E2D</string>
+    <string name="kanji_long">\u9577 </string>
+    <string name="kanji_exit">\u51FA </string>
+    <string name="kanji_time">\u6642 </string>
+    <string name="kanji_going">\u884C </string>
+    <string name="kanji_see">\u898B </string>
+    <string name="kanji_moon">\u6708 </string>
+    <string name="kanji_minute">\u5206 </string>
+    //Numbers
     <string name="kanji_one">\u2F00</string>
     <string name="kanji_two">\u4E8C</string>
     <string name="kanji_three">\u4E09</string>
