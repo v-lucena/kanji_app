@@ -2,4 +2,6 @@
 <resources>
     <dimen name="padding_medium">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
+    <dimen name="size_small">8dp</dimen>
+    <dimen name="kanji_card_height">136dp</dimen>
 </resources>

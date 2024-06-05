@@ -29,7 +29,8 @@ fun KanjiApp(
         )
         
         KanjiCard(
-            kanjiRes = R.string.kanji_big,
+            kanjiStringRes = R.string.kanji_big,
+            kanjiDrawableRes = R.drawable.kanji_big_stroke_order,
             modifier = Modifier
                 .padding(top = dimensionResource(id = R.dimen.padding_medium))
         )

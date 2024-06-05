@@ -217,4 +217,8 @@
     <string name="kanji_hundred">\u767E</string>
     <string name="kanji_thousand">\u5343</string>
     <string name="kanji_ten_thousand">\u4E07</string>
+    <string name="kun_reading_label">Kun:</string>
+    <string name="on_reading_label">On:</string>
+    <string name="kanji_meaning_label">Meaning:</string>
+    <string name="kanji_stroke_image_content_description">Kanji Stroke Image</string>
 </resources>
