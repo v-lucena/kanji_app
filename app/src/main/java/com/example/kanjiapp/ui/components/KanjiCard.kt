@@ -30,6 +30,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import com.example.kanjiapp.R
@@ -38,7 +39,7 @@ private const val CAMERA_DISTANCE_MODIFIER = 8
 private const val MAX_ROTATION = 180f
 private const val MINIMUM_ROTATION = 0f
 private const val ROTATION_ANIMATION_DURATION = 500
-private const val KANJI_FONT_SIZE = 88f
+private const val KANJI_FONT_SIZE = 256f
 
 @Composable
 fun KanjiCard(
@@ -94,28 +95,22 @@ private fun CardBack(kanjiDrawableRes: Int, animateBack: Float, rotation: Float)
         modifier = Modifier
             .fillMaxSize()
             .padding(bottom = dimensionResource(id = R.dimen.padding_medium))
+            .graphicsLayer {
+                alpha = animateBack
+                rotationY = rotation
+            }
     ) {
-        Row(
-            horizontalArrangement = Arrangement.SpaceEvenly,
+        KanjiStrokeImage(
+            kanjiDrawableRes = kanjiDrawableRes,
             modifier = Modifier
-                .fillMaxSize()
-                .padding(top = dimensionResource(id = R.dimen.padding_medium))
-                .graphicsLayer {
-                    alpha = animateBack
-                    rotationY = rotation
-                }
-        ) {
-            KanjiStrokeImage(
-                kanjiDrawableRes = kanjiDrawableRes,
-                modifier = Modifier
-                    .weight(1f)
-            )
+                .weight(2f)
+        )
 
-            KanjiInformation(
-                modifier = Modifier
-                    .weight(1f)
-            )
-        }
+        KanjiInformation(
+            modifier = Modifier
+                .padding(dimensionResource(id = R.dimen.padding_medium))
+                .weight(1f)
+        )
     }
 }
 
@@ -123,50 +118,108 @@ private fun CardBack(kanjiDrawableRes: Int, animateBack: Float, rotation: Float)
 private fun KanjiInformation(
     modifier: Modifier = Modifier
 ) {
-    Column(
+    Row(
+        horizontalArrangement = Arrangement.SpaceEvenly,
         modifier = modifier
     ) {
-        Row {
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = dimensionResource(id = R.dimen.padding_small))
+        ){
             Text(
                 text = stringResource(R.string.kun_reading_label),
                 fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
-            Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+
             Text(
                 text = stringResource(id = R.string.hiragana_o_big) + stringResource(
                     id = R.string.hiragana_o_big
                 ),
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
-        }
 
-        Row {
             Text(
                 text = stringResource(R.string.on_reading_label),
                 fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
-            Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+
             Text(
                 text = stringResource(id = R.string.katakana_da_big) + stringResource(
                     id = R.string.katakana_i_big
                 ),
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
+            /*Row {
+                Text(
+                    text = stringResource(R.string.kun_reading_label),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                )
+                Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+                Text(
+                    text = stringResource(id = R.string.hiragana_o_big) + stringResource(
+                        id = R.string.hiragana_o_big
+                    ),
+                    modifier = Modifier
+                )
+            }
+
+            Row {
+                Text(
+                    text = stringResource(R.string.on_reading_label),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                )
+                Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+                Text(
+                    text = stringResource(id = R.string.katakana_da_big) + stringResource(
+                        id = R.string.katakana_i_big
+                    ),
+                    modifier = Modifier
+                )
+            }*/
         }
-        Spacer(modifier = Modifier.weight(1f))
-        Row {
+
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = dimensionResource(id = R.dimen.padding_small))
+        ){
             Text(
                 text = stringResource(R.string.kanji_meaning_label),
                 fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
-            Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+
             Text(
-                text = "large, big",
+                text = "large, big, some more text",
+                textAlign = TextAlign.Center,
                 modifier = Modifier
             )
+            /*Row {
+                Text(
+                    text = stringResource(R.string.kanji_meaning_label),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                )
+                Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.size_small)))
+                Column {
+                    Text(
+                        text = "large, big, some more text",
+                        modifier = Modifier
+                    )
+                }
+            }*/
         }
     }
 }
@@ -179,8 +232,8 @@ private fun KanjiStrokeImage(
     Image(
         painter = painterResource(id = kanjiDrawableRes),
         contentDescription = stringResource(R.string.kanji_stroke_image_content_description),
-        contentScale = ContentScale.None,
         modifier = modifier
+            .fillMaxSize()
     )
 }
 
